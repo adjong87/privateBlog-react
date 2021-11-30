@@ -36,7 +36,7 @@ De blog-applicatie heeft op dit moment nog geen pagina's en ook geen routing. Di
 1. Home pagina (`/`)
 2. Login pagina (`/login`)
 3. Blog Overzicht pagina (`/blogposts`)
-4. Blogpost pagina (`/blog/:blogId`)
+4. Blogpost pagina (`/blogposts/:blogId`)
 
 * Zorg ervoor dat er *content* op die pagina's komt te staan:
     * Maak een navigatiebalk met de links naar de Home Pagina, Login pagina en Blog Overzicht pagina. Zorg dat deze op
