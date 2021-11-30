@@ -49,7 +49,7 @@ De blog-applicatie heeft op dit moment nog geen pagina's en ook geen routing. Di
       gebruiken als een array met objecten:
 
 ```
-import posts from './data/posts.json';
+import posts from '../data/posts.json';
 
 function BlogPost() {
   console.log(posts);
