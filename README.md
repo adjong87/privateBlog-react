@@ -82,7 +82,7 @@ We gaan er ook voor zorgen dat de navigatiebalk zich aanpast wanneer een gebruik
 ## Bonus opdrachten
 
 - Maak voor de beveiligde routes een apart `<PrivateRoute>` component voor die je kunt hergebruiken!
-- Voeg een React hook form toe aan de login pagina waar de gebruiker ook daadwerkelijk gegevens kan invullen. Je kunt
+- Voeg een formulier toe aan de login pagina waar de gebruiker ook daadwerkelijk gegevens kan invullen. Je kunt
   dan een `users.json` bestand maken met gebruikers erin, zodat je iemand daadwerkelijk kunt laten "inloggen" met een
   bestaand account.
 - Make it look nice!
