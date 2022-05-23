@@ -51,7 +51,7 @@ De blog-applicatie heeft op dit moment nog geen pagina's en ook geen routing. Di
 ```
 import posts from '../data/posts.json';
 
-function BlogPost() {
+function BlogPostPage() {
   console.log(posts);
   
   return (
