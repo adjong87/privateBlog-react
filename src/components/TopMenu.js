@@ -3,7 +3,12 @@ import { NavLink } from "react-router-dom";
 import './TopMenu.css';
 
 
-function TopMenu() {
+function TopMenu({isAuthenticated, toggleIsAuthenticated}) {
+
+    function handleClick() {
+        toggleIsAuthenticated(!isAuthenticated)
+    }
+
     return (
         <nav className="TopMenu">
                 <h4>Personal Blog</h4>
@@ -16,13 +21,12 @@ function TopMenu() {
 
                     <li>
                         <NavLink exact to="/blogposts" activeClassName="active-link">
-                            Blog overzicht
+                            {isAuthenticated === true ? "Blog overzicht" : ""}
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/login" activeClassName="active-link">
-                            Login
-                        </NavLink>
+                        {isAuthenticated === true ? <button type="button" onClick={handleClick}>Uitloggen
+                        </button> : <NavLink to="/login" activeClassName="active-link">Login</NavLink> }
                     </li>
                 </ul>
         </nav>
